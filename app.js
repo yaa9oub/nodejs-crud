@@ -18,7 +18,7 @@ mongoose.connect('mongodb+srv://ceyphe:azerty6969@cluster0.gaczp.mongodb.net/tod
      }
      if (done) {
          console.log("Connected to db");
-         app.listen(3000, ()=> console.log("listening to server.."));
+         app.listen(process.env.PORT || 3000, ()=> console.log("listening to server.."));
      }
  }
 );
